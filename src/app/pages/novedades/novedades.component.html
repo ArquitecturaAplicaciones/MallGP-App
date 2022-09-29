@@ -1,0 +1,10 @@
+<p class="title-novedades-section">Novedades</p>
+<mat-grid-list cols="3" class="card-padre">
+    <mat-card class="novedad-card" *ngFor="let novedad of novedades">
+        <mat-card-content>
+            <p>
+                {{ novedad.texto }}
+            </p>
+        </mat-card-content>
+    </mat-card>
+</mat-grid-list>
