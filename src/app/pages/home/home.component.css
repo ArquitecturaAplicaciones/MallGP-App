@@ -1,0 +1,14 @@
+.example-card {
+  min-height: 320px;
+  margin: 100px 0.5rem;
+  background-color: #F2F6FA;
+  margin-top: 50px;
+}
+
+.example-card img {
+  min-height: 230px;
+}
+
+.grid-card {
+  margin-top: 50px;
+}
