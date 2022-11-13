@@ -1,55 +1,53 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatSidenavModule } from '@angular/material/sidenav';
-import { MatIconModule } from '@angular/material/icon';
-import { MatListModule } from '@angular/material/list';
-import { MatButtonModule } from '@angular/material/button';
-import { MatDividerModule } from '@angular/material/divider';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { AforoComponent } from './pages/aforo/aforo.component';
-import { PromocionesComponent } from './pages/promociones/promociones.component';
-import { MapsMallComponent } from './pages/maps-mall/maps-mall.component';
-import { NovedadesComponent } from './pages/novedades/novedades.component';
-import { SugerenciasComponent } from './pages/sugerencias/sugerencias.component';
-import { HelpMallComponent } from './pages/help-mall/help-mall.component';
-import { AjustesComponent } from './pages/ajustes/ajustes.component';
-import { HomeComponent } from './pages/home/home.component';
-import {MatCardModule} from "@angular/material/card";
-import {MatGridListModule} from "@angular/material/grid-list";
-import {MatFormFieldModule} from '@angular/material/form-field';
-import {MatSelectModule} from '@angular/material/select';
+import { LoginComponent } from './components/login/login.component';
+import { LoginAdminComponent } from './components/login-admin/login-admin.component';
+import { HomeComponent } from './components/home/home.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { AforoComponent } from './components/aforo/aforo.component';
+import { HelpMallComponent } from './components/help-mall/help-mall.component';
+import { MapsMallComponent } from './components/maps-mall/maps-mall.component';
+import { NovedadesComponent } from './components/novedades/novedades.component';
+import { PromocionesComponent } from './components/promociones/promociones.component';
+import { SugerenciasComponent } from './components/sugerencias/sugerencias.component';
+import { TiendasComponent } from './components/tiendas/tiendas.component';
+import { AngularMaterialModule } from './components/shared/angular-material/angular-material.module';
+
+import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+import { AddSugerenciaComponent } from './components/add-sugerencia/add-sugerencia.component';
+import { DetallePromocionComponent } from './components/detalle-promocion/detalle-promocion.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    LoginComponent,
+    LoginAdminComponent,
+    HomeComponent,
+    NavbarComponent,
     AforoComponent,
-    PromocionesComponent,
+    HelpMallComponent,
     MapsMallComponent,
     NovedadesComponent,
+    PromocionesComponent,
     SugerenciasComponent,
-    HelpMallComponent,
-    AjustesComponent,
-    HomeComponent
+    TiendasComponent,
+    AddSugerenciaComponent,
+    DetallePromocionComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatToolbarModule,
-    MatSidenavModule,
-    MatButtonModule,
-    MatIconModule,
-    MatDividerModule,
-    MatCardModule,
-    MatGridListModule,
-    MatFormFieldModule,
-    MatSelectModule,
-    FormsModule
+    AngularMaterialModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

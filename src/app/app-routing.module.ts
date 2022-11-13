@@ -1,23 +1,35 @@
-import { AjustesComponent } from './pages/ajustes/ajustes.component';
-import { HelpMallComponent } from './pages/help-mall/help-mall.component';
-import { SugerenciasComponent } from './pages/sugerencias/sugerencias.component';
-import { NovedadesComponent } from './pages/novedades/novedades.component';
-import { MapsMallComponent } from './pages/maps-mall/maps-mall.component';
-import { PromocionesComponent } from './pages/promociones/promociones.component';
-import { AforoComponent } from './pages/aforo/aforo.component';
+import { LoginAdminComponent } from './components/login-admin/login-admin.component';
+import { LoginComponent } from './components/login/login.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './pages/home/home.component';
+import { AforoComponent } from './components/aforo/aforo.component';
+import { HelpMallComponent } from './components/help-mall/help-mall.component';
+import { HomeComponent } from './components/home/home.component';
+import { MapsMallComponent } from './components/maps-mall/maps-mall.component';
+import { NovedadesComponent } from './components/novedades/novedades.component';
+import { PromocionesComponent } from './components/promociones/promociones.component';
+import { SugerenciasComponent } from './components/sugerencias/sugerencias.component';
+import { TiendasComponent } from './components/tiendas/tiendas.component';
+import { AddSugerenciaComponent } from './components/add-sugerencia/add-sugerencia.component';
+import { DetallePromocionComponent } from './components/detalle-promocion/detalle-promocion.component';
+
 
 const routes: Routes = [
   {
     path: '',
     pathMatch: 'full',
-    redirectTo: 'home',
+    redirectTo: 'login',
+  },
+  {
+    path: 'login',
+    component: LoginComponent,
   },
   {
     path: 'home',
     component: HomeComponent,
+  },
+  { path:'tiendas', 
+    component:TiendasComponent
   },
   {
     path: 'aforo',
@@ -43,14 +55,24 @@ const routes: Routes = [
     path: 'help-mall',
     component: HelpMallComponent,
   },
+  
   {
-    path: 'ajustes',
-    component: AjustesComponent,
+    path: 'login-admin',
+    component: LoginAdminComponent,
+  },
+
+  {
+    path: 'add/sugerencia',
+    component: AddSugerenciaComponent,
+  },
+  {
+    path: 'detalle/promocion',
+    component: DetallePromocionComponent,
   },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule],
+  exports: [RouterModule]
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }
