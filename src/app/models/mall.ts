@@ -1,4 +1,4 @@
-export interface Mall {
+export interface Mall{
     id: number;
     nombre: string;
     direccion: string;

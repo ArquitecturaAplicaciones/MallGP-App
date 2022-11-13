@@ -1,4 +1,8 @@
+
 export interface Novedades {
     id: number;
-    texto: string;
+    text: string;
+    date_on: string;
+    date_of: string;
+    mall: null;
 }
