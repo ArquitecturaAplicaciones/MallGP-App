@@ -9,6 +9,9 @@ export const environment = {
   resourceNovedades:"/api/news",
   resourceTiendas:"/api/stores",
   resourceAdmins:"/api/admins",
+  resourceOffers:"/api/offers",
+  resourceMalls:"/api/malls",
+  resourceProducts:"/api/products"
 };
 
 /*

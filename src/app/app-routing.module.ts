@@ -12,6 +12,7 @@ import { SugerenciasComponent } from './components/sugerencias/sugerencias.compo
 import { TiendasComponent } from './components/tiendas/tiendas.component';
 import { AddSugerenciaComponent } from './components/add-sugerencia/add-sugerencia.component';
 import { DetallePromocionComponent } from './components/detalle-promocion/detalle-promocion.component';
+import { ProductComponent } from './components/product/product.component';
 
 
 const routes: Routes = [
@@ -64,6 +65,10 @@ const routes: Routes = [
   {
     path: 'add/sugerencia',
     component: AddSugerenciaComponent,
+  },
+  {
+    path: 'detalle/producto',
+    component: ProductComponent,
   },
   {
     path: 'detalle/promocion',

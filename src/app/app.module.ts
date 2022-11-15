@@ -22,6 +22,7 @@ import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AddSugerenciaComponent } from './components/add-sugerencia/add-sugerencia.component';
 import { DetallePromocionComponent } from './components/detalle-promocion/detalle-promocion.component';
+import { ProductComponent } from './components/product/product.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { DetallePromocionComponent } from './components/detalle-promocion/detall
     SugerenciasComponent,
     TiendasComponent,
     AddSugerenciaComponent,
-    DetallePromocionComponent
+    DetallePromocionComponent,
+    ProductComponent
   ],
   imports: [
     BrowserModule,
