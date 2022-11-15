@@ -20,7 +20,7 @@
   </mat-form-field>
   <mat-grid-list cols="3">
     <mat-grid-tile *ngFor="let tienda of tiendasView" class="grid-card">
-      <a routerLink="/aforo" style="text-decoration: none;"><mat-card class="example-card">
+      <a routerLink="/detalle/producto" style="text-decoration: none;"><mat-card class="example-card">
         <img mat-card-image src="../../../assets/images/{{ tienda.img }}" alt="Photo of a Shiba Inu">
         <mat-card-header>
           <mat-card-title>{{ tienda.name }}</mat-card-title>

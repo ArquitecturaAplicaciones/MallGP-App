@@ -35,7 +35,7 @@ export class HomeComponent implements OnInit {
   filtrarCiudades(): void {
     
     if (this.selectedCiudad != "todos"){
-      this.newMallView = this.mallsView.filter( mall => mall.ciudad == this.selectedCiudad)
+      this.newMallView = this.mallsView.filter( mall => mall.location == this.selectedCiudad)
       this.mallsView = this.newMallView
     } else {
       this.mallsView = this.mallsView
