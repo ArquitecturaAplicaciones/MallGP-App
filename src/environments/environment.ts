@@ -11,7 +11,9 @@ export const environment = {
   resourceAdmins:"/api/admins",
   resourceOffers:"/api/offers",
   resourceMalls:"/api/malls",
-  resourceProducts:"/api/products"
+  resourceProducts:"/api/products",
+  resourceProductStore:"/api/product/stores",
+  resourceStoreMall:"api/store/mall",
 };
 
 /*

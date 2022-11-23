@@ -1,3 +1,4 @@
+import { ExportComponent } from './components/export/export.component';
 import { LoginAdminComponent } from './components/login-admin/login-admin.component';
 import { LoginComponent } from './components/login/login.component';
 import { NgModule } from '@angular/core';
@@ -13,6 +14,18 @@ import { TiendasComponent } from './components/tiendas/tiendas.component';
 import { AddSugerenciaComponent } from './components/add-sugerencia/add-sugerencia.component';
 import { DetallePromocionComponent } from './components/detalle-promocion/detalle-promocion.component';
 import { ProductComponent } from './components/product/product.component';
+import { HomeAdminComponent } from './components/home-admin/home-admin.component';
+import { TiendasAdminComponent } from './components/tiendas-admin/tiendas-admin.component';
+import { AddStoreComponent } from './components/add-store/add-store.component';
+import { AddProductoComponent } from './components/add-producto/add-producto.component';
+import { AddPromocionesComponent } from './components/add-promociones/add-promociones.component';
+import { PromocionesAdminComponent } from './components/promociones-admin/promociones-admin.component';
+import { AforoAdminComponent } from './components/aforo-admin/aforo-admin.component';
+import { MapsMallAdminComponent } from './components/maps-mall-admin/maps-mall-admin.component';
+import { NovedadesAdminComponent } from './components/novedades-admin/novedades-admin.component';
+import { HelpAdminComponent } from './components/help-admin/help-admin.component';
+import { SugerenciasAdminComponent } from './components/sugerencias-admin/sugerencias-admin.component';
+import { ProductAdminComponent } from './components/product-admin/product-admin.component';
 
 
 const routes: Routes = [
@@ -71,9 +84,79 @@ const routes: Routes = [
     component: ProductComponent,
   },
   {
+    path: 'admin/home',
+    component: HomeAdminComponent,
+  },
+  {
+    path: 'admin/store',
+    component: TiendasAdminComponent,
+  },
+  {
+    path: 'admin/add/store',
+    component: AddStoreComponent,
+  },
+  {
+    path: 'admin/add/producto',
+    component: AddProductoComponent,
+  },
+  {
+    path:'admin/edit/store/:id',
+    component: AddStoreComponent,
+  },
+  {
+    path:'admin/edit/promocion/:id',
+    component: AddPromocionesComponent,
+  },
+  {
+    path:'admin/edit/producto/:id',
+    component: AddProductoComponent,
+  },
+  {
     path: 'detalle/promocion',
     component: DetallePromocionComponent,
   },
+  {
+    path: 'admin/export',
+    component:ExportComponent,
+  },
+  {
+    path: 'admin/promociones',
+    component:PromocionesAdminComponent,
+  },
+  {
+    path: 'admin/add/promocion',
+    component:AddPromocionesComponent,
+  },
+
+  {
+    path: 'admin/aforo',
+    component:AforoAdminComponent,
+  },
+
+  {
+    path: 'admin/maps',
+    component:MapsMallAdminComponent,
+  },
+
+  {
+    path: 'admin/novedades',
+    component:NovedadesAdminComponent,
+  },
+
+  {
+    path: 'admin/help',
+    component:HelpAdminComponent,
+  },
+
+  {
+    path: 'admin/sugerencia',
+    component:SugerenciasAdminComponent,
+  },
+
+  {
+    path: 'admin/producto',
+    component:ProductAdminComponent,
+  }
 ];
 
 @NgModule({

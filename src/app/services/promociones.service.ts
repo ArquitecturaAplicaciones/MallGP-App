@@ -27,6 +27,10 @@ export class PromocionesService {
   updatePromocion(ppromocion:Promocion){
     return this.http.put<Promocion>(this.resourcePath+"/"+ppromocion.id.toString(),ppromocion);
   }
+
+  deletePromocion(id:number){
+    return this.http.delete(this.resourcePath+"/"+id.toString());
+  }
   
 
 }

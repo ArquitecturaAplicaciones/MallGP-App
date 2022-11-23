@@ -23,6 +23,20 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AddSugerenciaComponent } from './components/add-sugerencia/add-sugerencia.component';
 import { DetallePromocionComponent } from './components/detalle-promocion/detalle-promocion.component';
 import { ProductComponent } from './components/product/product.component';
+import { ExportComponent } from './components/export/export.component';
+import { NavbarAdminComponent } from './components/navbar-admin/navbar-admin.component';
+import { AddProductoComponent } from './components/add-producto/add-producto.component';
+import { AddPromocionesComponent } from './components/add-promociones/add-promociones.component';
+import { AddStoreComponent } from './components/add-store/add-store.component';
+import { AforoAdminComponent } from './components/aforo-admin/aforo-admin.component';
+import { HelpAdminComponent } from './components/help-admin/help-admin.component';
+import { HomeAdminComponent } from './components/home-admin/home-admin.component';
+import { MapsMallAdminComponent } from './components/maps-mall-admin/maps-mall-admin.component';
+import { NovedadesAdminComponent } from './components/novedades-admin/novedades-admin.component';
+import { ProductAdminComponent } from './components/product-admin/product-admin.component';
+import { PromocionesAdminComponent } from './components/promociones-admin/promociones-admin.component';
+import { SugerenciasAdminComponent } from './components/sugerencias-admin/sugerencias-admin.component';
+import { TiendasAdminComponent } from './components/tiendas-admin/tiendas-admin.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +54,21 @@ import { ProductComponent } from './components/product/product.component';
     TiendasComponent,
     AddSugerenciaComponent,
     DetallePromocionComponent,
-    ProductComponent
+    ProductComponent,
+    ExportComponent,
+    NavbarAdminComponent,
+    AddProductoComponent,
+    AddPromocionesComponent,
+    AddStoreComponent,
+    AforoAdminComponent,
+    HelpAdminComponent,
+    HomeAdminComponent,
+    MapsMallAdminComponent,
+    NovedadesAdminComponent,
+    ProductAdminComponent,
+    PromocionesAdminComponent,
+    SugerenciasAdminComponent,
+    TiendasAdminComponent
   ],
   imports: [
     BrowserModule,
