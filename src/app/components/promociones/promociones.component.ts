@@ -38,7 +38,7 @@ export class PromocionesComponent implements OnInit {
   filtrarGenero(): void {
     
     if (this.selectedGenero != "todos"){
-      this.newPromoView = this.promoView.filter( promocion => promocion.generoproducto == this.selectedGenero)
+      this.newPromoView = this.promoView.filter( promocion => promocion.gender_product == this.selectedGenero)
       this.promoView = this.newPromoView
     } else {
       this.promoView = this.promoView

@@ -13,4 +13,21 @@ export class TiendasService {
   getTiendas(){
     return this.http.get<Tienda[]>(this.resourcePath)
   }
+
+  
+  getTienda(id:number){
+    return this.http.get<Tienda>(this.resourcePath+"/"+id.toString());
+  }
+
+  addTienda(ptienda:Tienda){
+    return this.http.post<Tienda>(this.resourcePath,ptienda);
+  }
+
+  updateTienda(ptienda:Tienda){
+    return this.http.put<Tienda>(this.resourcePath+"/"+ptienda.id.toString(),ptienda);
+  }
+
+  deleteTienda(id:number){
+    return this.http.delete(this.resourcePath+"/"+id.toString());
+  }
 }

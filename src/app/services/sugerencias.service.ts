@@ -27,5 +27,7 @@ export class SugerenciasService {
   updateSugerencia(psugerencias:Sugerencias){
     return this.http.put<Sugerencias>(this.resourcePath+"/"+psugerencias.id.toString(),psugerencias);
   }
-  
+  deleteSugerencia(id:number){
+    return this.http.delete(this.resourcePath+"/"+id.toString());
+  }
 }

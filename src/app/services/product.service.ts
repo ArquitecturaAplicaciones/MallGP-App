@@ -27,4 +27,8 @@ export class ProductService {
   updateProducto(pproducto:Product){
     return this.http.put<Product>(this.resourcePath+"/"+pproducto.id.toString(),pproducto);
   }
+
+  deleteProduct(id:number){
+    return this.http.delete(this.resourcePath+"/"+id.toString());
+  }
 }

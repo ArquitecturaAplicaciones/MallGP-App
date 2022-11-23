@@ -14,4 +14,7 @@ export class NovedadesService {
   getNews(){
     return this.http.get<Novedades[]>(this.resourcePath)
   }
+  deleteTienda(id:number){
+    return this.http.delete(this.resourcePath+"/"+id.toString());
+  }
 }

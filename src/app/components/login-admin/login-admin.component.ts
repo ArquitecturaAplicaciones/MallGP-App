@@ -56,7 +56,7 @@ export class LoginAdminComponent implements OnInit {
       if(name){
         alert("Logins Success");
         this.form.reset();
-        this.router.navigate(['home'])
+        this.router.navigate(['admin/home'])
       }else{
         this.error();
         this.form.reset();
@@ -77,7 +77,7 @@ export class LoginAdminComponent implements OnInit {
   fakeLoading(){
     this.loading = true;
     setTimeout(() => {
-      this.router.navigate(['home']);
+      this.router.navigate(['admin/home']);
     }, 100);
   }
 
